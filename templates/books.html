@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Library Books</title>
+</head>
+<body>
+
+  <div id="books-container"></div>
+
+  <script>
+    // Your fetch code here
+    fetch('http://127.0.0.1:5000/api/books?page=3')
+      .then(response => response.json())
+      .then(data => {
+        console.log(data.books);  // Check books in browser console
+        // You can add code here to display books in the page
+      });
+  </script>
+</body>
+</html>
